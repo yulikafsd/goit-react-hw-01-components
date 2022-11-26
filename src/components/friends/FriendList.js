@@ -1,6 +1,6 @@
 import FriendListItem from './FriendListItem';
 
-export default function FriendList({ friends }) {
+const FriendList = ({ friends }) => {
   return (
     <ul className="friend-list">
       {friends.map(({ avatar, name, isOnline, id }) => {
@@ -15,4 +15,6 @@ export default function FriendList({ friends }) {
       })}
     </ul>
   );
-}
+};
+
+export default FriendList;

@@ -1,6 +1,6 @@
-export default function FriendListItem({ avatar, name, isOnline, key }) {
+export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li className="item" key={key}>
+    <li className="item">
       <span className={isOnline ? 'status online' : 'status offline'}>
         {isOnline ? 'on' : 'off'}
       </span>
