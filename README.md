@@ -1,3 +1,12 @@
+### Pending tasks:
+
+1. Statistics - Колір фону елемента статистики в оформленні можна пропустити або
+   створити функцію для генерації випадкового кольору.
+2. FriendsListItem - Залежно від пропа isOnline, повинен змінюватися колір фону
+   span.status. Це можна зробити за допомогою різних CSS-класів або Styled
+   Components.
+3. Підключити модулі стилів.
+
 **Read in other languages: [Русский](README.md), [Polska](README.pl.md),
 [English](README.en.md), [Spanish](README.es.md).**
 
