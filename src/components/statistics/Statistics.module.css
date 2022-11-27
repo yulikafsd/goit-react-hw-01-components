@@ -1,0 +1,35 @@
+.statistics {
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title {
+    display: block;
+    text-transform: uppercase;
+    color: #5d6063;
+    padding: 20px;
+}
+
+.statList {
+    display: flex;
+    color: rgb(241, 241, 241);
+}
+
+.statItem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-shadow: 1px 2px 4px rgb(85, 89, 92);
+}
+
+.label {
+    display: block;
+}
+
+.percentage {
+    font-size: 20px;
+}
