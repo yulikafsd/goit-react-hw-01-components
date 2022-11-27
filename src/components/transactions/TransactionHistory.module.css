@@ -49,3 +49,19 @@ background-color: #fff;
 .transactionsCell:not(:last-child) {
     border-right: 1px solid #E5E5E5;
 }
+
+.withdrawal {
+    color: violet;
+}
+
+.payment {
+    color: blue;
+}
+
+.deposit {
+    color: green;
+}
+
+.invoice {
+    color: orangered;
+}
