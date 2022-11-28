@@ -10,7 +10,7 @@ export const Item = styled.li`
   align-items: center;
   overflow: hidden;
   text-align: center;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.colors.primaryBackgroundColor};
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -19,14 +19,14 @@ export const Item = styled.li`
   }
 `;
 
-const setBgColor = props => {
-  if (props.online === true) {
-    return '#47b04a';
+const setBgColor = ({ online, theme }) => {
+  if (online === true) {
+    return theme.colors.onlineColor;
   } else {
-    return '#FF524C';
+    return theme.colors.offlineColor;
   }
   // OR WITH SWITCH:
-  // switch (props.online) {
+  // switch (online) {
   //   case true:
   //     return '#47b04a';
   //   case false:
