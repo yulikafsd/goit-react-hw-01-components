@@ -1,15 +1,17 @@
-import css from './Friends.module.css';
+import { Item, Status, Avatar, Name } from './Friends.styled';
 import PropTypes from 'prop-types';
 
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li className={css.item}>
-      <span className={isOnline ? css.online : css.offline}> </span>
-      <img className={css.avatar} src={avatar} alt={name} width="48" />
-      <p className={css.name}>{name}</p>
-    </li>
+    <Item>
+      <Status isOnline={isOnline} />
+      <Avatar src={avatar} alt={name} width="48" />
+      <Name>{name}</Name>
+    </Item>
   );
 }
+
+// <Status isOnline={isOnline}></Status> - занести в листайтем с пропсом
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
