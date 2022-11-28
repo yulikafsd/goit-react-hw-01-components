@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
     <Item>
-      <Status isOnline={isOnline} />
+      <Status online={isOnline} />
       <Avatar src={avatar} alt={name} width="48" />
       <Name>{name}</Name>
     </Item>

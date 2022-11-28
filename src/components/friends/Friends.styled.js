@@ -19,18 +19,29 @@ export const Item = styled.li`
   }
 `;
 
+const setBgColor = props => {
+  if (props.online === true) {
+    return '#47b04a';
+  } else {
+    return '#FF524C';
+  }
+  // OR WITH SWITCH:
+  // switch (props.online) {
+  //   case true:
+  //     return '#47b04a';
+  //   case false:
+  //     return '#FF524C';
+  //   default:
+  //     return '#000';
+  // }
+};
+
 export const Status = styled.span`
   display: block;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: ${props => {
-    if (props.isOnline === true) {
-      return '#47b04a';
-    } else {
-      return '#FF524C';
-    }
-  }};
+  background-color: ${setBgColor};
 `;
 
 export const Avatar = styled.img`
